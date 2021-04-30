@@ -1,4 +1,6 @@
-﻿using System;
+﻿using NUnit.Framework;
+using System;
+using System.IO;
 using TechTalk.SpecFlow;
 
 namespace AlfaBankTestTasks.Steps
@@ -11,6 +13,12 @@ namespace AlfaBankTestTasks.Steps
         public AlfaBankTestsSteps(Molder.Web.Steps.Steps web)
         {
             _web = web;
+        }
+
+        [OneTimeSetUp]
+        public void Init()
+        {
+            Environment.CurrentDirectory = Path.GetDirectoryName(GetType().Assembly.Location);
         }
 
         [Given(@"Login on Mantis page with UserName=\""(.+)\"" and Password=\""(.+)\""")]

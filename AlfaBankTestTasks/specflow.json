@@ -11,6 +11,12 @@
     },
     {
       "assembly": "Molder.Configuration"
+    },
+    {
+      "assembly": "Allure.SpecFlowPlugin"
+    },
+    {
+      "assembly": "SpecFlowSharedSteps"
     }
   ]
 }

@@ -2,7 +2,7 @@
 Feature: AlfaBank Tests
 
 
-Scenario: (1) Login
+Scenario: Login
 	Given я сохраняю текст "you UserName" в переменную "userName"
 	Given я сохраняю текст "you Passsword" в переменную "password"
 		And я развернул веб-страницу на весь экран
@@ -15,11 +15,11 @@ Scenario: (1) Login
 	When выполнено нажатие на элемент "LoginButton" на веб-странице
 	Then адрес активной веб-страницы содержит значение "https://www.mantisbt.org/bugs/my_view_page.php"
 
-Scenario: (2) Login with custom steps
+Scenario: Login with custom steps
 	Given Login on Mantis page with UserName="you UserName" and Password="you Passsword"
 	Then адрес активной веб-страницы содержит значение "https://www.mantisbt.org/bugs/my_view_page.php"
 
-Scenario: (3) Create and Check Issue
+Scenario: Create and Check Issue
 	Given Login on Mantis page with UserName="you UserName" and Password="you Passsword"
 		And я обновляю текущую страницу на "MantisHomePage"
 		And выполнено нажатие в блоке "Actions Sidebar" на элемент "Report Issue" на веб-странице
