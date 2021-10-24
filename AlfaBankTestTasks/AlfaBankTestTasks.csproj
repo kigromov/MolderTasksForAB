@@ -19,6 +19,7 @@
   </ItemGroup>
 
   <ItemGroup>
+    <PackageReference Include="JunitXml.TestLogger" Version="3.0.98" />
     <PackageReference Include="Microsoft.NET.Test.Sdk" Version="16.9.4" />
     <PackageReference Include="Molder.Configuration" Version="1.0.14" />
     <PackageReference Include="Molder.Generator" Version="1.0.14" />
